@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+            background-color:rgb(17, 29, 55);
+            overflow:hidden;
+        }
+        .navbar{
+            display:flex;
+            background-color:rgb(16, 71, 167);
+            justify-content:space-between;
+            overflow:hidden;
+        }
+        .my{
+            color:aliceblue;
+            padding-left:40px;
+            padding-top:10px
+        }
+        .navbar ul{
+            list-style:none;
+            padding:0px;
+            margin:0px;
+            padding-right:20px
+        }
+        .navbar li{
+            float:left;
+            margin:0px;
+            padding:0px
+        }
+        .navbar a{
+            text-decoration:none;
+            color:aliceblue;
+            display:block;
+            padding:10px 10px ;
+            transition:color 3s ease
+        }
+        .navbar a:hover{
+            color:white;
+            background-color:rgb(3, 35, 116);          
+        }
+       .main{
+        background-image:url("back.jpeg");
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        height:35vh;                    
+       }
+       .main h1{
+        text-align:center;
+        color:rgb(45, 50, 55);  
+    }
+        .main p{
+            text-align:center;
+            color:rgb(45, 50, 55);
+            font-size:20px;
+            font-weight: bold; 
+        }
+        .main button{
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            background-color:rgb(23, 152, 178);
+            border:4px inset rgb(17, 82, 69);
+            border-radius:10px;
+            height:40px;
+            width:90px;
+            transition:transform 80ms ease; 
+        }
+        .main button:hover{
+            transform:scale(1.2)
+        }
+       .formflexbox{
+        padding-top:23px;
+        display:flex;
+        justify-content:center;
+        align-items:center;   
+       }
+       .maindiv{
+        width:600px;
+        max-width: 100%;
+        padding: 30px;
+        background-color: rgb(27, 56, 105);
+        border: 2px solid white;
+        border-radius: 10px;
+        text-align:center;
+        box-shadow:0px 0px 2px 4px rgb(233, 57, 213)
+    }
+    .maindiv:hover{
+         box-shadow:0px 0px 2px 6px rgb(233, 57, 213)
+    }
+    .maindiv h3{
+        color:aliceblue;
+    }
+    .maindiv p{
+        color:aliceblue;
+        
+    }
+    .maindiv input{
+        text-align:center;
+        background-color: rgb(12, 34, 98);
+        border-radius:5px;
+        color:white;
+    }
+    .maindiv input::placeholder{
+        color:aliceblue
+    }
+    .maindiv textarea{
+        text-align:center;
+        background-color: rgb(12, 34, 98);
+        border-radius:5px;
+        color:white
+    }
+    .maindiv textarea::placeholder{
+        color:aliceblue;
+        padding-top:8px
+    }
+    .maindiv button{
+        border-radius:5px;
+        background-color:rgb(41, 97, 182);
+        color:aliceblue;
+        height:30px;
+        width:120px;
+        transition:transform 1s ease;
+    }
+    .maindiv button:hover{
+        transform:scale(1.080); 
+        box-shadow: 0px 0px 2px 2px cyan;
+    }
+    
+.bot{
+    padding-bottom:20px;
+    background-color:rgb(5, 44, 106);
+    margin-top:70px
+}
+.bot p{
+    padding-top:16px;
+    text-align:center;
+    color:aliceblue;
+    font-size:12px;
+}
+
+    
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="my">MY WEBSITE</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Servies</a></li>
+            <li><a href="#galary">Galary</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    
+    <div class="mainthing">
+        <div class="main">
+        <h1>THIS IS MY WEBSITE</h1>
+        <p>We build beautiful and responsive websites<br>
+        for a better digital experience. </p>
+        <button>get started</button>
+    </div>
+    </div>
+    <div class="formflexbox">
+        <div class="maindiv">
+            <h3>CONTACT US</h3>
+            <p>Feel free to reach out. We'd love to hear from you!</p>  
+            <form>
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Email Address">
+                <br>
+                <input type="text" placeholder="Phone Number">
+                <textarea placeholder="your message"></textarea>
+                <br><br>
+                <button type="sumbit">sumbit</button>
+               
+               
+            </form>
+        </div>
+    </div>
+<div class="bot">
+
+    <p>@ MyWebsite. all rights reserved. </p>
+</div>
+    
+</body>
+</html>
